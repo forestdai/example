@@ -3,8 +3,8 @@ Activity+Fragment典型app框架
 
 Activity页面：
 继承BaseActivity
-LaunchActivity：启动页面，加载用户数据，更新检测等操作在此界面实现，操作结束后根据实际业务决定跳转GuideActivity、HomePageActivity或者DetailActivity。
-GuideActivity：首次启动的多图引导页，内含一个ViewPager，图片根据需求增删，最后一个页面根据业务跳转HomePageActivity或者DetailActivity。
+LaunchActivity：启动页面，加载用户数据
+GuideActivity：首次启动的多图引导页，内含一个ViewPager，图片根据需求增删
 HomePageActivity：主界面，页面数量由底部导航功能块决定，改页面展示界面一定包含底部导航栏，任意功能块内二次跳转均使用DetailActivity展示处理。
 DetailActivity：内容管理核心展示页面，展示内容由单个Fragment实现后嵌套该页面。
 
